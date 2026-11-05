@@ -14,7 +14,7 @@ COPY src/ src/
 RUN chmod +x mvnw && ./mvnw -B clean package
 
 # Étape 2 : exécuter l'application
-FROM eclipse-temurin:21-jre
+FROM eclipse-temurin:21-jre-alpine
 
 WORKDIR /app
 
